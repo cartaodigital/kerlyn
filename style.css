@@ -102,12 +102,6 @@ z-index:0;
     box-shadow:0 8px 20px rgba(0,0,0,0.2);  /* leve sombra */
 }
 
-
-
-  @media (max-width: 600px) {
-   
-  }
-
     .vendedora{
 
         margin-top:10px;
@@ -192,7 +186,7 @@ z-index:0;
         display:grid;
         grid-template-columns:repeat(2,1fr);
         gap: 20px;
-        max-width:250px;
+        max-width:280px;
         margin: auto;
         margin-top: 20px;
         
@@ -237,8 +231,6 @@ z-index:0;
 /* RODAPÉ */
 /* ============================= */
 
-
-    
 .rodape {
     position: relative;           /* necessário para o QR ficar absoluto */
     padding: 20px;
