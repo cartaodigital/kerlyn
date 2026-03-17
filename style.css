@@ -98,7 +98,7 @@ z-index:0;
     width:140px;                  /* tamanho da logo */
     background:rgba(14, 71, 32, 0.781);             /* círculo branco por trás */
     padding:8px;                  /* espaço entre logo e borda */
-    border-radius:50%;            /* deixa circular */
+    border-radius:20%;            /* deixa circular */
     box-shadow:0 8px 20px rgba(0,0,0,0.2);  /* leve sombra */
 }
 
