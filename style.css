@@ -102,38 +102,10 @@ z-index:0;
     box-shadow:0 8px 20px rgba(0,0,0,0.2);  /* leve sombra */
 }
 
-.qr-fixo {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    z-index: 999;
-  }
-  
-  .qr-fixo img {
-    width: 100px;
-    height: 100px;
-    background: white;
-    padding: 6px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  }
+
 
   @media (max-width: 600px) {
-    .qr-fixo {
-        position: fixed;
-        top: 50%;
-        right: 10px; /* diminui */
-        transform: translateY(-50%);
-        z-index: 999;
-      
-        max-width: 90vw; /* trava dentro da tela */
-      }
-      
-      .qr-fixo img {
-        width: 90px;
-        height: 90px;
-      }
+   
   }
 
     .vendedora{
@@ -220,7 +192,7 @@ z-index:0;
         display:grid;
         grid-template-columns:repeat(2,1fr);
         gap: 20px;
-        max-width:280px;
+        max-width:250px;
         margin: auto;
         margin-top: 20px;
         
@@ -265,16 +237,35 @@ z-index:0;
 /* RODAPÉ */
 /* ============================= */
 
-.rodape{
-    margin-top:5px;
-    padding:20px;
-    color:#666;
-    font-size:14px;
-    text-align: center;
-    }
+
     
-    .rodape i{
-    font-size:22px;
-    margin-bottom:8px;
-    display:block;
-    }  
+.rodape {
+    position: relative;           /* necessário para o QR ficar absoluto */
+    padding: 20px;
+    
+    text-align: center;           /* centraliza o texto */
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .rodape-texto {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .qr-footer {
+    position: absolute;
+    right: 2px;                  /* distancia da borda direita */
+    top: 50%;                      /* centraliza verticalmente */
+    transform: translateY(-45%);
+  }
+  
+  .qr-footer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
